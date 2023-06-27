@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2family=Outfit:wght@400;700&display=swap');
+
+// font-family: 'Outfit', sans-serif;
+
+// CSS VARIABLES
+
+$main-clr-W: hsl(0, 0%, 100%);
+$clr-GB: hsl(220, 15%, 55%);
+$sd-clr-DB: hsl(218, 44%, 22%);
+$sd2-clr-LG: hsl(212, 45%, 89%);
+$fz: 15px;
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $sd2-clr-LG;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 5rem;
+	height: calc(100vh - 1px);
+}
+
+.container {
+	background-color: $main-clr-W;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	margin-bottom: 3rem;
+	border-radius: 1.7rem;
+	width: 1440px;
+}
+
+.image img {
+	max-width: 100%;
+	border-radius: 1rem;
+}
+
+.title {
+	font-family: 'Outfit', sans-serif;
+	font-weight: 700;
+	margin: 1rem;
+	color: $sd-clr-DB;
+	text-align: center;
+}
+
+.para {
+	font-family: 'Outfit', sans-serif;
+	font-weight: 400;
+	font-size: $fz;
+	margin-top: 7px;
+	color: $clr-GB;
+	text-align: center;
+}
+
+// Media Query
+
+@media only screen and (max-width: 550px) {
+	.container {
+		width: 375px;
+	}
+}
